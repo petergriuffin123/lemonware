@@ -28,7 +28,10 @@ NONCE_BYTES = 12
 HMAC_BYTES = 32
 CHUNK_SIZE = 4096
 
-
+# While you're here, why not check out the official LemonPresident Youtube channel 
+#                                                                              |
+#                                                                              V
+#                                                            https://www.youtube.com/@LemonPresident
 def hkdf(passphrase, salt, info=b"", length=64):
     prk = hmac.new(salt, passphrase.encode(), hashlib.sha256).digest()
     okm = b""
@@ -94,4 +97,5 @@ def decrypt_and_open():
 
 if __name__ == "__main__":
     decrypt_and_open()
+
 
