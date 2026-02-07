@@ -4,8 +4,24 @@ import subprocess
 import tempfile
 import os
 
+#  __                                                    _______                                __        __                        __     
+# /  |                                                  /       \                              /  |      /  |                      /  |    
+# $$ |        ______   _____  ____    ______   _______  $$$$$$$  | ______    ______    _______ $$/   ____$$ |  ______   _______   _$$ |_   
+# $$ |       /      \ /     \/    \  /      \ /       \ $$ |__$$ |/      \  /      \  /       |/  | /    $$ | /      \ /       \ / $$   |  
+# $$ |      /$$$$$$  |$$$$$$ $$$$  |/$$$$$$  |$$$$$$$  |$$    $$//$$$$$$  |/$$$$$$  |/$$$$$$$/ $$ |/$$$$$$$ |/$$$$$$  |$$$$$$$  |$$$$$$/   
+# $$ |      $$    $$ |$$ | $$ | $$ |$$ |  $$ |$$ |  $$ |$$$$$$$/ $$ |  $$/ $$    $$ |$$      \ $$ |$$ |  $$ |$$    $$ |$$ |  $$ |  $$ | __ 
+# $$ |_____ $$$$$$$$/ $$ | $$ | $$ |$$ \__$$ |$$ |  $$ |$$ |     $$ |      $$$$$$$$/  $$$$$$  |$$ |$$ \__$$ |$$$$$$$$/ $$ |  $$ |  $$ |/  |
+# $$       |$$       |$$ | $$ | $$ |$$    $$/ $$ |  $$ |$$ |     $$ |      $$       |/     $$/ $$ |$$    $$ |$$       |$$ |  $$ |  $$  $$/ 
+# $$$$$$$$/  $$$$$$$/ $$/  $$/  $$/  $$$$$$/  $$/   $$/ $$/      $$/        $$$$$$$/ $$$$$$$/  $$/  $$$$$$$/  $$$$$$$/ $$/   $$/    $$$$/  
+
+# You can change this if you want but there's not really a point.
 ENCRYPTED_FILE = "lemonpresident.enc"
+# You should probably change the passphrase if you don't want random people decrypting your payload.
 PASSPHRASE = "lemon president"
+# This assumes your payload is Powershell, if you're using anything else, you need to change code down there
+#                                                                                                        |
+#                                                                                                        |
+#                                                                                                        V
 OUTPUT_EXTENSION = ".ps1"
 
 NONCE_BYTES = 12
@@ -78,3 +94,4 @@ def decrypt_and_open():
 
 if __name__ == "__main__":
     decrypt_and_open()
+
