@@ -7,7 +7,7 @@ Official sha26 hash for the obfuscated LemonPresident build: c8f2cc4862975b405c1
 Official sha256 hash for the obfuscated LemonPresident build before I signed it: 6ece8313f1442058e473bc998ee9dbadabe47320e90835c21f8528265c0e71a9
 
 
-Lnject LemonPresident into any python script ✅
+Inject LemonPresident into any python script ✅
 
 
 
