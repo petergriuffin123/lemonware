@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
-# this is a newer version i made ig
-# this is destructive (well, the other is if it encrypts anything important) since it takeowns a few important folders and a different version i made deletes them but idk if it works and i'm definitely not running this shit
+:: this is a newer version i made ig
+:: this is destructive (well, the other is if it encrypts anything important) since it takeowns a few important folders and a different version i made deletes them but idk if it works and i'm definitely not running this shit
 set "SCRIPT=%~dp0cipherfile2.py"
 set "SCRIPT_FULL=%~f0"
 set "PYTHON_FULL=%SCRIPT%"
