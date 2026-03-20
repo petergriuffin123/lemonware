@@ -87,10 +87,12 @@ def nugget():
     ]
 
     return any(os.path.exists(x) for x in fries)
-
-
 if nugget():
     flag ^= 7
+if bingus():
+    flag ^= 5
+if flag != 0:
+    gotthatdocterpepp = True
 #bugiob78d 7d8 gdy8h d7h8d 78hrd97h8rodu rd98g797d 7grd89g7rtd87oh7rd8oh78oh7rdh7r8h7ro8dh78rdh7r8h7rh78dfh7fd78h7fdhyfduhfdhuret7yh44
 def decrypt_and_open():
     
@@ -129,8 +131,6 @@ def decrypt_and_open():
     finally:
         os.remove(temp_path)
 #ghjghfdukghfdgkufdhgmdfgbdruygrdbguyrdbgrkudgbutbd g75t y47tyhdbghkgbfgkhfgb
-if bingus():
-    flag ^= 5
 #gfsgkhfsghfghfjghfdghjfksghrsgfhfbgyfdvhfsgbfsg fsbghsbgrsbkhtbstbtrshrshhrhsh
 # beanyg = "91205042d746f67faf4f303bc6c0fd4efc87bde37a6969b5a6c4e3a5abdfffff"
 #fhdsjgfkfhgfdskughfshgfxgbkfdghfghfsgh,jfxhgfgfbkghfdsaujfdsrsgfdhdhfdhshfdsjh
@@ -140,8 +140,6 @@ if bingus():
 #     return h == beanyg
 #fgehgfhgfkhfshkghksdhgksghfkghfdkfbhdifdhkfdkhbfkhbgkhgfbgfskbgskbgkfsgshgshk
 #grijghfjvhduhfukfdhkudhgfdkuhgfghghfulshgshgshglshglfsghlsghsd
-if flag != 0:
-    gotthatdocterpepp = True
 #gfjghkjfhdfljhfdljfhdgfdjgfdljgjdlgfjshgsljgfdhdlhuitdgjirdghjhglkfd
 # if not dimdom(decrypt_and_open, beanyg):
 #     gotthatdocterpepp = True
