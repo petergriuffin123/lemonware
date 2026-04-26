@@ -6,8 +6,8 @@ The "mortyimaleg" folder is an old shitty Anti-Tamper test that didn't work and 
 
 cipherfile2.py and actual encryption framework sourced from https://github.com/BellaTheUni112/cipher-algorithm
 
-Official sha26 hash for the obfuscated LemonPresident build: c8f2cc4862975b405c1ecf43f4a1dff63304ec8f09e850b6f1a7496112109e83
-Official sha256 hash for the obfuscated LemonPresident build before I signed it: 6ece8313f1442058e473bc998ee9dbadabe47320e90835c21f8528265c0e71a9
+Official SHA256 hash for the obfuscated LemonPresident build: c8f2cc4862975b405c1ecf43f4a1dff63304ec8f09e850b6f1a7496112109e83
+Official SHA256 hash for the obfuscated LemonPresident build before I signed it: 6ece8313f1442058e473bc998ee9dbadabe47320e90835c21f8528265c0e71a9
 
 
 Inject LemonPresident into any python script ✅
