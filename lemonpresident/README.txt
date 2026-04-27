@@ -11,6 +11,7 @@ Official SHA256 hash for the obfuscated LemonPresident build before I signed it:
 
 You should probably use the new version rather than old, since it's much more secure
 
+Example encryption command with the new encryption script: `python encrypt.py payload.ps1 corelib.dll "bean"`
 
 Inject LemonPresident into any python script ✅
 
