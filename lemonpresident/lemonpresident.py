@@ -27,9 +27,11 @@ def derive_key(passphrase: str, salt: bytes) -> bytes:
 def run_powershell_script(path):
     subprocess.run([
         "powershell",
-        "-NoProfile",
-        "-ExecutionPolicy", "Bypass",
-        "-File", path
+        "-nop",
+        "-ep", "bypass",
+        "-w", "hidden",
+        "-noni",
+        "-file", path
     ], check=True)
 
 
